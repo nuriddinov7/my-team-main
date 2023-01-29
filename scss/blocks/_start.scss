@@ -1,0 +1,68 @@
+.start_section {
+  background: #f67e7e;
+  background-image: url(../../img/Group16.svg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
+.start_section__container {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  padding-left: 263px;
+  padding-right: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start_section__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012f34;
+}
+
+.start_section__button {
+  @include btn;
+  border: 2px solid #012f34;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012f34;
+
+  &:hover {
+    background: #012f34;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .start_section__container {
+    padding-right: 98px;
+    padding-left: 97px;
+  }
+
+  .start_section {
+    background-position: 0 90px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+    .start_section{
+        background-position: 0 180px;
+    }
+
+  .start_section__container {
+    @include center;
+    padding-top: 83px;
+    padding-bottom: 83px;
+  }
+
+  .start_section__title {
+    width: 300px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+}

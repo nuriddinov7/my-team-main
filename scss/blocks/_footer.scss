@@ -1,0 +1,129 @@
+.site_footer {
+  background: #002529;
+}
+
+.site_footer__container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site_footer__main_box{
+    display: flex;
+}
+
+.site_footer__logo_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.site_footer__logo_link{
+    width: 160px;
+}
+
+.site_footer_list {
+  display: flex;
+}
+
+.site_footer__item + .site_footer__item {
+  margin-left: 40px;
+}
+
+.site_footer__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.site_footer__adress {
+  max-width: 400px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-left: 125px;
+}
+
+.site_footer__socials_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.site_footer__socials_item {
+  display: flex;
+  justify-content: end;
+}
+
+.site_footer__socials_link + .site_footer__socials_link {
+  margin-left: 16px;
+}
+
+.site_footer__license {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: right;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width:1010px) {
+    .site_footer__container{
+        display: block;
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .site_footer__main_box{
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    .site_footer__adress{
+        text-align: right;
+    }
+
+    .site_footer__socials_box{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+@media only screen and (max-width:550px) {
+    .site_footer__main_box{
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .site_footer__logo_box{
+        max-width: 100%;
+        @include center;
+    }
+
+    .site_footer__adress{
+        max-width: 100%;
+        text-align: center;
+        margin-top: 24px;
+        margin-left: 0;
+    }
+
+    .site_footer__socials_box{
+        @include center;
+    }
+
+    .site_footer__logo{
+        margin-bottom: 24px;
+    }
+
+    .site_footer__socials_item{
+        margin-bottom: 16px;
+    }
+}
