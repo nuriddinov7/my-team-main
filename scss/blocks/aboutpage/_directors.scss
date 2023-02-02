@@ -1,0 +1,161 @@
+.directors_section {
+  background: #004047;
+  background-repeat: no-repeat;
+  background-image: url("../../../img/Group18.svg"),
+    url("../../../img/Group19.svg");
+  background-position: 0 0, 100% 100%;
+}
+
+.directors_section__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 64px;
+  color: #ffffff;
+}
+
+.directors_section__container {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.directors_section__card_box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.directors_section__card {
+  @include center;
+  width: 350px;
+  padding-top: 32px;
+  padding-bottom: 56px;
+  padding-right: 24px;
+  padding-left: 24px;
+  background: #012f34;
+  margin-bottom: 76px;
+  position: relative;
+
+  &--end{
+    @include center;
+    width: 350px;
+    padding-top: 32px;
+    padding-bottom: 56px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background: #012f34;
+    position: relative;
+  }
+}
+.directors_section__avatar_box {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+}
+
+.directors_section__card_name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79c8c7;
+
+  &--end {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #79c8c7;
+    margin-bottom: 8px;
+    margin-top: 3px;
+  }
+}
+
+.directors_section__card_job {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+
+  &--end{
+    font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 240px;
+  }
+}
+
+.directors_section__socials{
+  margin-top: 24px;
+}
+
+.directors_section__link + .directors_section__link{
+  margin-left: 16px;
+}
+
+.directors_section__button {
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  transform: translateY(50%);
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    width: 60px;
+    height: 60px;
+    box-shadow: #ffffff 0 0 3px 0.5px;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .directors_section__container{
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+}
+
+@media screen and (max-width:1270px) {
+  .directors_section__card{
+    width: 281px;
+
+    &--end{
+      width: 281px;
+    }
+  }
+}
+
+@media screen and (max-width:1036px) {
+  .start{
+    margin-bottom: 76px;
+  }
+  
+  .directors_section__title{
+    font-size: 32px;
+  line-height: 32px;
+  }
+  
+}
+
+@media screen and (max-width:755px) {
+  .directors_section__container{
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .directors_section__card{
+    margin-bottom: 52px;
+  }
+  .directors_section__card_box{
+    @include center;
+  }
+
+  .directors_section__card--end{
+    margin-bottom: 52px;
+
+  }
+}
