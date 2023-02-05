@@ -40,6 +40,19 @@ p {
   padding: 0;
 }
 
+input {
+  background: inherit;
+  display: inline-block;
+  font-family: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &::placeholder{
+    margin: 0;
+  }
+}
+
 .container {
   max-width: 1440px;
   padding-left: 165px;
